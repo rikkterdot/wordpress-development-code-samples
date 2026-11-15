@@ -1,0 +1,499 @@
+/* style.css */
+td.scalarworks-label {
+    padding: 15px 0;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: -0.5px;
+}
+
+.woocommerce div.product .summary .variations td.scalarworks-label, 
+.woocommerce div.product .summary .variations td.scalarworks-value {
+    width: 100% !important;
+}
+
+.scalarworks-custom-label {
+    font-weight: bold;
+}
+
+td.scalarworks-value {
+    border-top: 0;
+    padding: 0;
+}
+
+.scalarworks-single span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.scalarworks-single span.scalarworks-tile-description {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.scalarworks-color__inner {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+
+    .scalarworks-color-single {
+        display: flex;
+        align-items: center;
+        grid-gap: 7.5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    span.scalarworks-color-bubble {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        border: 2px solid #fff;
+        display: flex;
+        color: #ffffff;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        text-shadow: -2px 2px 4px rgba(0,0,0,0.25);
+    }
+
+    .scalarworks-color-single.active span.scalarworks-color-bubble {
+        border-color: #00acd7 !important;
+    }
+
+}
+
+.scalarworks-tile__inner {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    padding: 0 0 15px;
+    cursor: pointer;
+
+    > div {
+        flex: 1;
+    }
+
+    .scalarworks-tile-single {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid rgb(0 0 0 / 20%);
+        border-radius: 8px;
+        padding: 7.5px 15px;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+
+    .scalarworks-tile-single.active {
+        border-color: #00acd7;
+    }
+    
+}
+#scalarworks-custom_pa_height {
+    .scalarworks-tile__inner {
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+        padding: 5px 0 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        > div {
+            flex: 1;
+        }
+
+        .scalarworks-tile-single {
+            font-size: 20px;
+            min-width: 60px;
+            height: 60px;
+            max-width: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgb(0 0 0 / 20%);
+            border-radius: 8px;
+            cursor: pointer;
+
+            &.active {
+                border-color: #00acd7;
+            }
+        }
+    }
+
+    
+}
+
+.scalarworks-faq__inner {
+    display: flex;
+    background: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px 0;
+    min-height: 65px;
+    position: relative;
+    cursor: pointer;
+
+    > div {
+        flex: 1;
+    }
+
+    .scalarworks-faq__image {
+        max-width: 90px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    h3.scalarworks-faq__title {
+        font-size: 18px;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    .scalarworks-faq__text {
+        font-size: 14px;
+        opacity: 0.8;
+    }
+    
+    .scalarworks-faq__content {
+        line-height: 1.6;
+        padding: 5px 15px;
+    }
+
+    .scalarworks-faq__button {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
+    .scalarworks-faq__button svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    &:hover .scalarworks-faq__button svg circle.plus_close-full {
+        fill: #000;
+    }
+
+    &:hover .scalarworks-faq__button svg path.plus_close-plus {
+        fill: #fff;
+    }
+
+}
+
+p.scalarworks-product-price .amount {
+    font-size: 24px;
+    color: #000;
+    line-height: 1;
+}
+
+span.sku_wrapper {
+
+    .sku-added {
+        font-weight: bold;
+    }
+    
+}
+
+.woocommerce-scalarworks-image-wrapper.hidden {
+    position: absolute;
+    left: 100vw;
+}
+
+.woocommerce-scalarworks-gallery {
+    position: relative;
+    float: left;
+    width: 48%;
+}
+
+@media screen and (max-width:767px) {
+
+    .woocommerce-scalarworks-gallery {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+.woocommerce-scalarworks-gallery-main {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.woocommerce-scalarworks-gallery-thumbnails {
+    display: flex;
+    grid-gap: 5px;
+    margin: 5px 0 0 0;
+}
+
+.woocommerce-scalarworks-gallery-thumb {
+    width: 80px;
+    border: 1px solid #ccc;
+    aspect-ratio: 1/ 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: .65;
+}
+
+.woocommerce-scalarworks-gallery-thumb.active {
+    opacity: 1;
+}
+
+.woocommerce-scalarworks-gallery-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.woocommerce-scalarworks-gallery-lightbox.active {
+    display: flex;
+}
+
+.woocommerce-scalarworks-gallery-lightbox__inner {
+    aspect-ratio: 1/1;
+    max-width: 900px;
+    max-height: calc(100vh - 100px);
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button#woocommerce-scalarworks-lightbox-open {
+    background: none;
+    border: none;
+}
+
+.woocommerce-scalarworks-gallery-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+div#attached_optic {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+    padding: 0 0 15px;
+    cursor: pointer;
+
+    .scalarworks-package-single {
+        border: 2px solid rgba(0,0,0,.2);
+        border-radius: 8px;
+        font-size: 14px;
+        color: #000;
+        font-weight: bold;
+        padding: 7.5px 15px;
+
+        span.scalarworks-package-price {
+            font-weight: 100;
+        }
+    }
+
+    .scalarworks-package-single.active {
+        border-color: #00acd7;
+    }
+}
+
+.scalarworks-faq-modal {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    display: none;
+    justify-content: center;
+    background: rgb(0 0 0 / 50%);
+
+    .scalarworks-faq-modal__inner {
+        max-width: 800px;
+        width: 100%;
+        background: #fff;
+        border-radius: 18px;
+        position: relative;
+        margin: 40px auto;
+        overflow: hidden;
+    }
+
+    .scalarworks-faq-modal__content {
+        padding: 60px;
+    }
+
+    .scalarworks-faq-modal__content h2 {
+        margin: 0 0 1.2rem;
+    }
+
+    .scalarworks-faq-modal__close {
+        text-align: right;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 10;
+
+        span {
+            cursor: pointer;
+
+            &:hover {
+                svg circle.plus_close-full {
+                    fill: #000;
+                }
+
+                svg path.plus_close-plus {
+                    fill: #fff;
+                }
+            }
+        }
+
+        span svg {
+            width: 16px;
+            height: 16px;
+            transform: rotate(45deg);
+        }
+    }
+
+    .scalarworks-faq-modal__video {
+        position: relative;
+        min-height: 149px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .scalarworks-faq-modal__video-inner {
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+
+            h2.scalarworks-faq-modal__video-title {
+                text-transform: uppercase;
+                color: #fff;
+                margin: 0;
+                font-size: 28px;
+                letter-spacing: -2px;
+                font-weight: 700;
+                text-shadow: 1px 1px 3px rgb(0 0 0 / 25%);
+                line-height: 1.4;
+            }
+
+            .scalarworks-faq-modal__video-subtitle {
+                color: #fff;
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            .scalarworks-faq-modal__video-play img {
+                width: 32px;
+                height: 32px;
+                margin: 7.5px 0 0;
+            }
+        }
+
+        .scalarworks-faq-modal__video-overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(3 1 1 / 40%);
+            z-index: 1;
+        }
+    }
+
+    .scalarworks-faq-modal__questions {
+        background: #f4f4f4;
+
+        .scalarworks-faq-modal__questions-inner {
+            text-align: center;
+            padding: 19px 20px;
+
+            h3.scalarworks-faq-modal__questions-title {
+                margin: 0;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 1.4;
+            }
+
+            .scalarworks-faq-modal__questions-link {
+                font-size: 14px;
+
+                a {
+                    color: #00acd7;
+                }
+
+                img {
+                    max-width: 100px;
+                }
+            }
+        }
+    }
+}
+
+.scalarworks-faq-modal.active {
+    display: block;
+}
+
+tr.scalar-disabled td > div {
+    position: relative;
+}
+
+tr.scalar-disabled td > div:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255 255 255 / 50%);
+    z-index: 1;
+}
+
+.scalarworks-faq-modal__content {
+    max-width: 865px;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    hr {
+        border-color: #BABABA;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .scalarworks-faq-modal .scalarworks-faq-modal__content {
+        padding: 20px;
+    }
+
+}
